@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coaching Landing Page</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts: Righteous -->
+  <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+
+  <!-- Extend Tailwind with Righteous font -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            righteous: ['Righteous', 'cursive']
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      font-family: 'Righteous', cursive;
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-br from-indigo-900 via-purple-900 to-blue-900 text-white">
+
+  <!-- Navbar -->
+  <header class="bg-white text-black py-4 shadow-md">
+    <div class="container mx-auto flex justify-between items-center px-6">
+      <div class="flex items-center space-x-2">
+        <img src="Assests/logo.png" alt="logo" class="w-10 h-10 rounded-full">
+      </div>
+      <nav class="space-x-6 hidden md:flex font-righteous">
+        <a href="#" class="hover:text-indigo-600">Home</a>
+        <a href="#" class="hover:text-indigo-600">About</a>
+        <a href="#" class="hover:text-indigo-600">Courses</a>
+        <a href="#" class="hover:text-indigo-600">Contact</a>
+      </nav>
+      <div class="space-x-4 font-righteous">
+        <button class="text-sm text-gray-800">Login</button>
+        <button class="bg-gradient-to-r from-indigo-500 to-purple-500 text-white px-4 py-1 rounded-md">Signup</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative overflow-hidden">
+    <div class="container mx-auto flex flex-col md:flex-row items-center justify-between px-6 py-20">
+      <!-- Left Content -->
+      <div class="max-w-xl space-y-6 font-righteous">
+        <p class="tracking-widest text-sm text-gray-300 uppercase">Successful coaches are visionaries</p>
+        <h1 class="text-4xl md:text-5xl font-bold leading-tight">
+          Good <span class="text-blue-400">coaching</span> is<br/>
+          good teaching &<br/>
+          nothing else.
+        </h1>
+        <div class="flex items-center space-x-4 mt-6">
+          <button class="px-6 py-2 border border-white rounded-lg hover:bg-white hover:text-indigo-800 transition">View Courses</button>
+          <button class="text-white underline">Get Free Consultation</button>
+        </div>
+        <div class="mt-8 flex items-center bg-white rounded-lg p-2 shadow-md max-w-md">
+          <input type="text" placeholder="What do you want to learn today?" class="flex-grow px-3 py-2 text-black rounded-md outline-none"/>
+          <button class="bg-indigo-600 text-white px-4 py-2 rounded-md">Search</button>
+        </div>
+      </div>
+
+      <!-- Right Content -->
+      <div class="relative mt-10 md:mt-0 md:w-1/2">
+        <img src="Assests/image.png" alt="Coach" class="absolute top-0 right-0 size-80 flex-col...rounded-md shadow-lg">
+        <div class="absolute top-10 left-[-20px] bg-white, rounded-xxl bg-white, rounded-xl text-sm p-4  max-w-xs font-righteous">
+          <h3 class="font-semibold text-blue-400">Shyam</h3>
+          <p class="text-xs leading-relaxed text-gray-300 mt-1">
+            In a coaching role, you ask the questions and rely more on your staff, who become the experts, to provide the information.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Brand Logos -->
+  <section class="bg-gradient-to-r from-indigo-800 via-purple-800 to-blue-800 py-6">
+    <div class="container mx-auto flex justify-center gap-10 items-center flex-wrap px-6">
+      <img src="Assests/spotify.png" alt="Spotify" class="h-6">
+      <img src="Assests/Amazon.png" alt="Amazon" class="h-6">
+      <img src="Assests/spotify.png" alt="Spotify" class="h-6">
+      <img src="Assests/cisco.png" alt="Cisco" class="h-10">
+      <img src="Assests/Link ⏵ brand5.png" alt="Logitech" class="h-6">
+      <img src="Assests/Amazon.png" alt="Amazon" class="h-6">
+    </div>
+  </section>
+  <style>
+        /* Custom styles for the circular element and gradient button */
+        .gradient-circle {
+            background: linear-gradient(135deg, #A78BFA, #8B5CF6); /* Example gradient, adjust as needed */
+            width: 80px; /* Adjust size as needed */
+            height: 80px; /* Adjust size as needed */
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        .gradient-button {
+            background: linear-gradient(90deg, #6B46C1, #8B5CF6); /* Example gradient, adjust as needed */
+            color: white;
+            padding: 0.75rem 2rem;
+            border-radius: 9999px; /* Full rounded */
+            font-weight: 500;
+            transition: all 0.2s ease-in-out;
+        }
+
+        .gradient-button:hover {
+            opacity: 0.9;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-blue-50 to-indigo-100 min-h-screen font-sans">
+
+    <div class="container mx-auto px-4 py-16">
+        <div class="flex flex-col items-center justify-center text-center mb-16">
+            <div class="gradient-circle mb-4">
+                </div>
+            <h2 class="text-4xl font-extrabold text-gray-900 mb-4">
+                Featured <span class="text-indigo-600">Course</span>
+            </h2>
+            <p class="text-lg text-color-#000000 max-w-2xl">
+                THE FEATURE COURSES ARE WE INVENTED OUR TEACHING PART
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col transform transition duration-300 hover:scale-105">
+                <img src="Assests/3d-map-pins.png" alt="Motion Graphics Course" class="w-full h-48 object-cover">
+                <div class="p-6 flex-grow flex flex-col">
+                    <div class="flex justify-between items-center mb-3 text-sm text-gray-500">
+                        <span>1,092 Students</span>
+                        <span>01h 50m</span>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4 flex-grow">Motion Graphics: Create a Nice Typography Animation</h3>
+                    <div class="flex justify-between items-center mt-auto pt-4 border-t border-gray-100">
+                        <span class="text-2xl font-bold text-indigo-600">Rs.499</span>
+                        <button class="text-gray-400 hover:text-indigo-600 transition-colors">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.182 1.769.707 1.769H19m-4 0a1 1 0 110 2 1 1 0 010-2zm-4 0a1 1 0 110 2 1 1 0 010-2z" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col transform transition duration-300 hover:scale-105">
+                <img src="Assests/Mask group.png" alt="Advance PHP Course" class="w-full h-48 object-cover">
+                <div class="p-6 flex-grow flex flex-col">
+                    <div class="flex justify-between items-center mb-3 text-sm text-gray-500">
+                        <span>1,575 Students</span>
+                        <span>01h 50m</span>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4 flex-grow">Advance PHP knowledge with JS to make smart web</h3>
+                    <div class="flex justify-between items-center mt-auto pt-4 border-t border-gray-100">
+                        <span class="text-2xl font-bold text-indigo-600">Rs.499</span>
+                        <button class="text-gray-400 hover:text-indigo-600 transition-colors">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.182 1.769.707 1.769H19m-4 0a1 1 0 110 2 1 1 0 010-2zm-4 0a1 1 0 110 2 1 1 0 010-2z" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col transform transition duration-300 hover:scale-105">
+                <img src="Assests/Education PHP.png" alt="Education Software Course" class="w-full h-48 object-cover">
+                <div class="p-6 flex-grow flex flex-col">
+                    <div class="flex justify-between items-center mb-3 text-sm text-gray-500">
+                        <span>2,937 Students</span>
+                        <span>02h 40m</span>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4 flex-grow">Education Software and PHP and JS System Script</h3>
+                    <div class="flex justify-between items-center mt-auto pt-4 border-t border-gray-100">
+                        <span class="text-2xl font-bold text-indigo-600">Rs.499</span>
+                        <button class="text-gray-400 hover:text-indigo-600 transition-colors">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.182 1.769.707 1.769H19m-4 0a1 1 0 110 2 1 1 0 010-2zm-4 0a1 1 0 110 2 1 1 0 010-2z" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col transform transition duration-300 hover:scale-105">
+                <img src="Assests/financial analyst.png" alt="Financial Analyst Course" class="w-full h-48 object-cover">
+                <div class="p-6 flex-grow flex flex-col">
+                    <div class="flex justify-between items-center mb-3 text-sm text-gray-500">
+                        <span>5,457 Students</span>
+                        <span>01h 40m</span>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4 flex-grow">The Complete Financial Analyst Training & Investing</h3>
+                    <div class="flex justify-between items-center mt-auto pt-4 border-t border-gray-100">
+                        <span class="text-2xl font-bold text-indigo-600">Rs.499</span>
+                        <button class="text-gray-400 hover:text-indigo-600 transition-colors">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.182 1.769.707 1.769H19m-4 0a1 1 0 110 2 1 1 0 010-2zm-4 0a1 1 0 110 2 1 1 0 010-2z" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col transform transition duration-300 hover:scale-105">
+                <img src="Assests/Marketing.png" alt="Marketing 2023 Course" class="w-full h-48 object-cover">
+                <div class="p-6 flex-grow flex flex-col">
+                    <div class="flex justify-between items-center mb-3 text-sm text-gray-500">
+                        <span>595 Students</span>
+                        <span>01h 40m</span>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4 flex-grow">Marketing 2023: Complete Guide To Instagram Growth</h3>
+                    <div class="flex justify-between items-center mt-auto pt-4 border-t border-gray-100">
+                        <span class="text-2xl font-bold text-indigo-600">Rs.499</span>
+                        <button class="text-gray-400 hover:text-indigo-600 transition-colors">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.182 1.769.707 1.769H19m-4 0a1 1 0 110 2 1 1 0 010-2zm-4 0a1 1 0 110 2 1 1 0 010-2z" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col transform transition duration-300 hover:scale-105">
+                <img src="Assests/Learn 3D.png" alt="3D Modeling Course" class="w-full h-48 object-cover">
+                <div class="p-6 flex-grow flex flex-col">
+                    <div class="flex justify-between items-center mb-3 text-sm text-gray-500">
+                        <span>458 Students</span>
+                        <span>03h 00m</span>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4 flex-grow">Learn 3D Modelling and Design for Beginners</h3>
+                    <div class="flex justify-between items-center mt-auto pt-4 border-t border-gray-100">
+                        <span class="text-2xl font-bold text-indigo-600">Rs.499</span>
+                        <button class="text-gray-400 hover:text-indigo-600 transition-colors">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.182 1.769.707 1.769H19m-4 0a1 1 0 110 2 1 1 0 010-2zm-4 0a1 1 0 110 2 1 1 0 010-2z" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="text-center mt-16">
+            <button class="gradient-button">
+                Explore courses
+            </button>
+        </div>
+    </div>
+    <style>
+        
+        .background-gradient {
+            background: linear-gradient(to right, #79cdef, #74d4ef); /* Adjust gradient colors as needed */
+        }
+        .text-gradient {
+            background: linear-gradient(to right, #ffffff, #7ce6ea); /* Adjust gradient colors as needed */
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .border-gradient-right {
+            border-right: 1px solid;
+            border-image: linear-gradient(to bottom, transparent, #1c19d7, transparent) 1;
+        }
+    </style>
+</head>
+<body class="background-gradient min-h-screen flex items-center justify-center p-8">
+
+    <div class="container mx-auto text-white">
+        <div class="max-w-3xl mx-auto text-center mb-16">
+            <h2 class="text-4xl font-extrabold mb-4">
+                Why <span class="text-gradient">learn with our courses?</span>
+            </h2>
+            <p class="text-lg opacity-90">
+                We are providing the best courses and top classes. And extradinery placement training......
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+
+            <div class="flex flex-col justify-center items-center p-6">
+                <div class="mb-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-purple-200 opacity-80" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M14 10l-2 1m0 0l-2-1m2 1v2.5M20 7a1 1 0 00-1-1h-2a1 1 0 00-1 1v5.618a1 1 0 00.553.894l1.516.758a4 4 0 11-.447.894l-1.516-.758A1 1 0 0014 13.618V7a1 1 0 00-1-1H4a1 1 0 00-1 1v10a1 1 0 001 1h16a1 1 0 001-1V7a1 1 0 00-1-1z" />
+                    </svg>
+                </div>
+                <p class="text-3xl font-bold mb-3 opacity-95">01. Learn</p>
+                <p class="text-base opacity-80">
+                    Learn continually. There is always "one more thing" to learn.
+                </p>
+            </div>
+
+            <div class="hidden md:flex justify-center items-center">
+                <div class="border-gradient-right h-full w-px mx-auto"></div>
+            </div>
+
+            <div class="flex flex-col items-center p-6">
+                <div class="mb-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-purple-200 opacity-80" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 14v4m0 0l-1-1m1 1l1-1M5 11l4-4 6 6m1-5l2-2m-4-2H5a2 2 0 00-2 2v8a2 2 0 002 2h14a2 2 0 002-2V7a2 2 0 00-2-2h-3l-2-2z" />
+                    </svg>
+                </div>
+                <p class="text-3xl font-bold mb-3 opacity-95">02. Graduate</p>
+                <p class="text-base opacity-80">
+                    Be bold, be courageous, be your best.
+                </p>
+            </div>
+
+            <div class="hidden md:flex justify-center items-center">
+                <div class="border-gradient-right h-full w-px mx-auto"></div>
+            </div>
+
+            <div class="flex flex-col items-center p-6">
+                <div class="mb-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-purple-200 opacity-80" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 4h2a2 2 0 012 2v6a2 2 0 01-2 2H8a2 2 0 01-2-2V6a2 2 0 012-2h2m4 0h3l2 2v5h-7V6h2zm-2 0H8a2 2 0 00-2 2v6a2 2 0 002 2h8a2 2 0 002-2V8a2 2 0 00-2-2zm-6 0v2m0 4h.01M16 16v2m0 0h-2l-2-2m2 2l2-2" />
+                    </svg>
+                </div>
+                <p class="text-3xl font-bold mb-3 opacity-95">03. Work</p>
+                <p class="text-base opacity-80">
+                    Great companies are built in the office with hard work put in by team.
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+    <style>
+        /* Custom CSS for the main fixed-size container */
+        .fixed-page-container {
+            width: 1900px;
+            height: 800px;
+            overflow: auto; /* Adds scrollbars if content overflows these dimensions */
+            margin: 0 auto; /* Centers the container on larger screens */
+            background-color: #f0f4f8; /* A light blue-gray background matching the image */
+            /* You can add a subtle gradient if needed: */
+            /* background: linear-gradient(to bottom right, #e0f2fe, #eef2ff); */
+        }
+
+        .category-card {
+            background-color: #ffffff;
+            border-radius: 1rem; /* Equivalent to rounded-xl */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 10px 15px rgba(0, 0, 0, 0.05); /* Equivalent to shadow-lg */
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+        .category-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15), 0 20px 25px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-gray-200 flex items-center justify-center min-h-screen">
+    <div class="fixed-page-container font-sans p-16">
+        <div class="text-center mb-16">
+            <h2 class="text-6xl font-extrabold text-gray-900 mb-4">
+                Top <span class="text-indigo-600">Categories</span>
+            </h2>
+            <p class="text-2xl text-gray-600">
+                100+ unique online course list designs
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 px-20">
+
+            <div class="category-card p-6 flex flex-col items-center text-center">
+                <div class="p-4 rounded-full bg-red-100 text-red-500 mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 8c1.657 0 3 .895 3 2s-1.343 2-3 2h-1c-1.657 0-3 .895-3 2s1.343 2 3 2h1a5 5 0 005-5v-2a5 5 0 00-5-5H7a2 2 0 00-2 2v4a2 2 0 002 2h2m0-4h2m-6 0v2m0 4h2m-2-4h2m4-4h2m-4-2h2m0 4h2m-6-4h2m0 4h2" />
+                    </svg>
+                </div>
+                <h3 class="text-2xl font-semibold text-gray-800 mb-2">Digital Marketing</h3>
+                <p class="text-gray-500 text-lg">25 Courses</p>
+            </div>
+
+            <div class="category-card p-6 flex flex-col items-center text-center">
+                <div class="p-4 rounded-full bg-green-100 text-green-500 mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M10 20l4-16m4 4l4 4m-4 4l-4 4M6 16l-4-4 4-4" />
+                    </svg>
+                </div>
+                <h3 class="text-2xl font-semibold text-gray-800 mb-2">Web Development</h3>
+                <p class="text-gray-500 text-lg">16 Courses</p>
+            </div>
+
+            <div class="category-card p-6 flex flex-col items-center text-center">
+                <div class="p-4 rounded-full bg-purple-100 text-purple-500 mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M7 8h10M7 12h4m1 8l-6-6H4a2 2 0 01-2-2V6a2 2 0 012-2h16a2 2 0 012 2v8a2 2 0 01-2 2h-3l-6 6z" />
+                    </svg>
+                </div>
+                <h3 class="text-2xl font-semibold text-gray-800 mb-2">Art & Humanities</h3>
+                <p class="text-gray-500 text-lg">76 Courses</p>
+            </div>
+
+            <div class="category-card p-6 flex flex-col items-center text-center">
+                <div class="p-4 rounded-full bg-yellow-100 text-yellow-500 mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9l-1.414 1.414m-.707 7.071l1.414 1.414M4 12l.707.707m1.414-1.414L4 12m4.243-4.243l-1.414 1.414m-1.414 1.414L8.464 8.464m-4.95 4.95l1.414 1.414m.707-7.071l-1.414-1.414M12 4v.01M16 4v.01M12 20v.01M16 20v.01M4 12v.01M20 12v.01M8 4v.01M8 20v.01M4 4v.01M20 20v.01M4 20v.01M20 4v.01" />
+                    </svg>
+                </div>
+                <h3 class="text-2xl font-semibold text-gray-800 mb-2">Personal Development</h3>
+                <p class="text-gray-500 text-lg">22 Courses</p>
+            </div>
+
+            <div class="category-card p-6 flex flex-col items-center text-center">
+                <div class="p-4 rounded-full bg-teal-100 text-teal-500 mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 17L9 20l-2-1m2-1V5a2 2 0 00-2-2H4a2 2 0 00-2 2v10a2 2 0 002 2h2v4a2 2 0 002 2h3a2 2 0 002-2v-4h2a2 2 0 002-2V9M9 5h6m-6 0h.01M12 12V9m0 3a1 1 0 00-1 1v1a1 1 0 001 1h.01a1 1 0 001-1v-1a1 1 0 00-1-1zm4 0h.01M16 12v.01M18 12h.01M18 12v.01" />
+                    </svg>
+                </div>
+                <h3 class="text-2xl font-semibold text-gray-800 mb-2">IT and Software</h3>
+                <p class="text-gray-500 text-lg">110 Courses</p>
+            </div>
+
+            <div class="category-card p-6 flex flex-col items-center text-center">
+                <div class="p-4 rounded-full bg-lime-100 text-lime-500 mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0014.586 3H4a2 2 0 00-2 2v14a2 2 0 002 2h3m0-12h7m-7 4h7m-9 4h9M9 5l7 7" />
+                    </svg>
+                </div>
+                <h3 class="text-2xl font-semibold text-gray-800 mb-2">Graphic Design</h3>
+                <p class="text-gray-500 text-lg">85 Courses</p>
+            </div>
+
+        </div>
+        </div>
+</body>
+</html>
+ <style>
+        /* Custom CSS for the main fixed-size container */
+        .fixed-page-container {
+            width: 1920px;
+            height: 837px;
+            overflow: auto; /* Adds scrollbars if content overflows these dimensions */
+            margin: 0 auto; /* Centers the container on larger screens */
+            background: linear-gradient(to bottom right, #f0f4f8, #eef2ff); /* Light background gradient */
+        }
+
+        /* Custom gradient for the subscribe banner */
+        .subscribe-gradient {
+            background: linear-gradient(to right, #a78bfa, #ec4899); /* Purple to Pink */
+        }
+
+        /* Play button styling */
+        .play-button {
+            background-color: rgba(255, 255, 255, 0.3); /* Semi-transparent white */
+            backdrop-filter: blur(5px);
+            border: 2px solid rgba(255, 255, 255, 0.6);
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .play-button:hover {
+            background-color: rgba(255, 255, 255, 0.5);
+            border-color: rgba(255, 255, 255, 0.8);
+            transform: scale(1.05);
+        }
+
+        .play-icon {
+            fill: white;
+            width: 30px;
+            height: 30px;
+            margin-left: 5px; /* Adjust for triangular shape */
+        }
+
+        /* Star rating styling */
+        .star-rating svg {
+            color: #ffc107; /* Gold color for stars */
+            width: 1rem;
+            height: 1rem;
+        }
+    </style>
+</head>
+<body class="bg-gray-200 flex items-center justify-center min-h-screen">
+    <div class="fixed-page-container font-sans text-gray-800">
+
+        <section class="relative py-16 px-8 flex items-center justify-center">
+            <div class="subscribe-gradient rounded-3xl p-10 shadow-xl relative w-full max-w-5xl overflow-hidden text-center">
+                <img src="Assests/avatar 1.png" alt="Avatar" class="absolute top-8 left-16 w-12 h-12 rounded-full object-cover shadow-md transform rotate-6" style="filter: hue-rotate(50deg);">
+                <img src="Assests/avatar 2.png" alt="Avatar" class="absolute top-20 left-40 w-10 h-10 rounded-full object-cover shadow-md transform -rotate-12" style="filter: hue-rotate(100deg);">
+                <img src="Assests/Avatar 3.png" alt="Avatar" class="absolute bottom-8 left-24 w-14 h-14 rounded-full object-cover shadow-md transform rotate-15" style="filter: hue-rotate(150deg);">
+
+                <img src="Assests/avatar 4.png" alt="Avatar" class="absolute top-10 right-16 w-14 h-14 rounded-full object-cover shadow-md transform -rotate-10" style="filter: hue-rotate(200deg);">
+                <img src="Assests/avatar 5.png" alt="Avatar" class="absolute bottom-12 right-24 w-10 h-10 rounded-full object-cover shadow-md transform rotate-5" style="filter: hue-rotate(250deg);">
+                <img src="Assests/Avatar 6.png" alt="Avatar" class="absolute bottom-20 right-40 w-12 h-12 rounded-full object-cover shadow-md transform -rotate-8" style="filter: hue-rotate(300deg);">
+
+
+                <h3 class="text-white text-4xl font-extrabold mb-4 relative z-10">Subscribe For Get Update</h3>
+                <h4 class="text-white text-5xl font-extrabold mb-6 relative z-10">Every New Courses</h4>
+                <p class="text-white text-lg opacity-80 mb-8 relative z-10">20k+ students daily learn with Edule. Subscribe for new courses.</p>
+
+                <div class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-4 relative z-10">
+                    <input type="email" placeholder="Enter your email" class="px-6 py-3 rounded-full w-full sm:w-80 text-gray-800 focus:outline-none focus:ring-2 focus:ring-purple-300">
+                    <button class="bg-indigo-700 hover:bg-indigo-800 text-white font-semibold py-3 px-8 rounded-full transition-colors duration-200">Subscribe</button>
+                </div>
+            </div>
+            <div class="absolute top-10 left-0 w-24 h-24 bg-blue-300 opacity-30 rounded-full transform rotate-45" style="clip-path: polygon(0 0, 100% 0, 100% 100%);"></div>
+            <div class="absolute bottom-10 right-0 w-24 h-24 bg-purple-300 opacity-30 rounded-full transform -rotate-30" style="clip-path: polygon(0 0, 100% 0, 100% 100%);"></div>
+        </section>
+
+        <section class="py-16 px-8 flex items-center justify-center">
+            <div class="relative w-full max-w-4xl bg-white rounded-3xl shadow-xl overflow-hidden">
+                <img src="Assests/Video .png" alt="Video thumbnail" class="w-full h-auto object-cover">
+                <div class="absolute inset-0 flex items-center justify-center">
+                    <button class="play-button">
+                        <svg class="play-icon" viewBox="0 0 24 24">
+                            <path d="M8 5v14l11-7z"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="absolute bottom-4 right-4 flex space-x-2">
+                    <div class="w-16 h-16 bg-blue-500 rounded-lg transform rotate-12"></div>
+                    <div class="w-16 h-16 bg-pink-500 rounded-full"></div>
+                    <div class="w-16 h-16 bg-yellow-500 rounded-xl transform -rotate-6"></div>
+                    <div class="w-16 h-16 bg-green-500 rounded-full"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16 px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-5xl font-extrabold text-gray-900 mb-2">Testimonials</h2>
+                <p class="text-xl text-gray-600">What our student say about us</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <div class="bg-white rounded-xl shadow-lg p-6 flex flex-col items-start">
+                    <div class="flex items-center mb-4">
+                        <img src="Assests/girl 123.png" alt="User Avatar" class="w-12 h-12 rounded-full object-cover mr-4">
+                        <div class="star-rating flex">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.817 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.538 1.118l-2.817-2.034a1 1 0 00-1.175 0l-2.817 2.034c-.783.57-1.838-.197-1.538-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.92 8.725c-.783-.57-.381-1.81.588-1.81h3.462a1 1 0 00.95-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.817 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.538 1.118l-2.817-2.034a1 1 0 00-1.175 0l-2.817 2.034c-.783.57-1.838-.197-1.538-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.92 8.725c-.783-.57-.381-1.81.588-1.81h3.462a1 1 0 00.95-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.817 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.538 1.118l-2.817-2.034a1 1 0 00-1.175 0l-2.817 2.034c-.783.57-1.838-.197-1.538-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.92 8.725c-.783-.57-.381-1.81.588-1.81h3.462a1 1 0 00.95-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.817 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.538 1.118l-2.817-2.034a1 1 0 00-1.175 0l-2.817 2.034c-.783.57-1.838-.197-1.538-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.92 8.725c-.783-.57-.381-1.81.588-1.81h3.462a1 1 0 00.95-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-5 h-5 text-gray-300" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.817 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.538 1.118l-2.817-2.034a1 1 0 00-1.175 0l-2.817 2.034c-.783.57-1.838-.197-1.538-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.92 8.725c-.783-.57-.381-1.81.588-1.81h3.462a1 1 0 00.95-.69l1.07-3.292z"></path></svg>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 leading-relaxed text-base">
+                        Such an amazing teacher and easily understand the entire syllabus, and the guidance will be super and good to the way of exploring.
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg p-6 flex flex-col items-start">
+                    <div class="flex items-center mb-4">
+                        <img src="Assests/girl 123.png" alt="User Avatar" class="w-12 h-12 rounded-full object-cover mr-4">
+                        <div class="star-rating flex">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.817 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.538 1.118l-2.817-2.034a1 1 0 00-1.175 0l-2.817 2.034c-.783.57-1.838-.197-1.538-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.92 8.725c-.783-.57-.381-1.81.588-1.81h3.462a1 1 0 00.95-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.817 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.538 1.118l-2.817-2.034a1 1 0 00-1.175 0l-2.817 2.034c-.783.57-1.838-.197-1.538-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.92 8.725c-.783-.57-.381-1.81.588-1.81h3.462a1 1 0 00.95-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.817 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.538 1.118l-2.817-2.034a1 1 0 00-1.175 0l-2.817 2.034c-.783.57-1.838-.197-1.538-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.92 8.725c-.783-.57-.381-1.81.588-1.81h3.462a1 1 0 00.95-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.817 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.538 1.118l-2.817-2.034a1 1 0 00-1.175 0l-2.817 2.034c-.783.57-1.838-.197-1.538-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.92 8.725c-.783-.57-.381-1.81.588-1.81h3.462a1 1 0 00.95-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-5 h-5 text-gray-300" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.817 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.538 1.118l-2.817-2.034a1 1 0 00-1.175 0l-2.817 2.034c-.783.57-1.838-.197-1.538-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.92 8.725c-.783-.57-.381-1.81.588-1.81h3.462a1 1 0 00.95-.69l1.07-3.292z"></path></svg>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 leading-relaxed text-base">
+                        Such an amazing teacher and easily understand the entire syllabus, and the guidance will be super and good to the way of exploring.
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg p-6 flex flex-col items-start">
+                    <div class="flex items-center mb-4">
+                        <img src="Assests/girl 123.png" alt="User Avatar" class="w-12 h-12 rounded-full object-cover mr-4">
+                        <div class="star-rating flex">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.817 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.538 1.118l-2.817-2.034a1 1 0 00-1.175 0l-2.817 2.034c-.783.57-1.838-.197-1.538-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.92 8.725c-.783-.57-.381-1.81.588-1.81h3.462a1 1 0 00.95-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.817 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.538 1.118l-2.817-2.034a1 1 0 00-1.175 0l-2.817 2.034c-.783.57-1.838-.197-1.538-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.92 8.725c-.783-.57-.381-1.81.588-1.81h3.462a1 1 0 00.95-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.817 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.538 1.118l-2.817-2.034a1 1 0 00-1.175 0l-2.817 2.034c-.783.57-1.838-.197-1.538-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.92 8.725c-.783-.57-.381-1.81.588-1.81h3.462a1 1 0 00.95-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.817 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.538 1.118l-2.817-2.034a1 1 0 00-1.175 0l-2.817 2.034c-.783.57-1.838-.197-1.538-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.92 8.725c-.783-.57-.381-1.81.588-1.81h3.462a1 1 0 00.95-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-5 h-5 text-gray-300" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.817 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.538 1.118l-2.817-2.034a1 1 0 00-1.175 0l-2.817 2.034c-.783.57-1.838-.197-1.538-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.92 8.725c-.783-.57-.381-1.81.588-1.81h3.462a1 1 0 00.95-.69l1.07-3.292z"></path></svg>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 leading-relaxed text-base">
+                        Such an amazing teacher and easily understand the entire syllabus, and the guidance will be super and good to the way of exploring.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+</body>
+</html>
+
+            <div class="text-center mt-8">
+                <button class="gradient-button-featured">
+                    Explore courses
+                </button>
+            </div>
+        </section>
+
+        <footer class="footer-gradient text-white py-12 px-8 mt-auto">
+            <div class="container mx-auto grid grid-cols-1 md:grid-cols-5 gap-8 text-sm">
+                <div>
+                    <h4 class="text-black font-bold text-lg mb-4">Connect</h4>
+                    <div class="mb-4">
+                        <img src="Assests/logo footer.png" alt="Logo" class="h-16 w-auto mb-2 opacity-90">
+                        <p class="text-black opacity-70">
+                            Sri jagannath Nivas,3-1-100/188/B/1,<br>
+                            Pragati Colony, Bahadarapally, Medchal<br>
+                            Malkajgiri, Hyderabad, Telangana 500098
+                        </p>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-black font-bold text-lg mb-4">Classes</h4>
+                    <ul>
+                        <li class="mb-2"><a href="#" class="text-black text-lg hover:text-purple-200 opacity-80">Classroom courses</a></li>
+                        <li class="mb-2"><a href="#" class="text-black text-lg hover:text-purple-200 opacity-80">Virtual classroom courses</a></li>
+                        <li class="mb-2"><a href="#" class="text-black text-lg hover:text-purple-200 opacity-80">E-learning courses</a></li>
+                        <li class="mb-2"><a href="#" class="text-black text-lg hover:text-purple-200 opacity-80">Video Courses</a></li>
+                        <li class="mb-2"><a href="#" class="text-black text-lg hover:text-purple-200 opacity-80">Offline Courses</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-black font-bold text-lg mb-4">Community</h4>
+                    <ul>
+                        <li class="mb-2"><a href="#" class="text-black text-lg hover:text-purple-200 opacity-80">Learners</a></li>
+                        <li class="mb-2"><a href="#" class="text-black text-lg hover:text-purple-200 opacity-80">Porteners</a></li>
+                        <li class="mb-2"><a href="#" class="text-black text-lg hover:text-purple-200 opacity-80">Developers</a></li>
+                        <li class="mb-2"><a href="#" class="text-black text-lg hover:text-purple-200 opacity-80">Tronsactions</a></li>
+                        <li class="mb-2"><a href="#" class="text-black text-lg hover:text-purple-200 opacity-80">Blog</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-black font-bold text-lg mb-4">Quick links</h4>
+                    <ul>
+                        <li class="mb-2"><a href="#" class="text-black text-lg hover:text-purple-200 opacity-80">Home</a></li>
+                        <li class="mb-2"><a href="#" class="text-black text-lg hover:text-purple-200 opacity-80">Professional Education</a></li>
+                        <li class="mb-2"><a href="#" class="text-black text-lg hover:text-purple-200 opacity-80">Courses</a></li>
+                        <li class="mb-2"><a href="#" class="text-black text-lg hover:text-purple-200 opacity-80">Admissions</a></li>
+                        <li class="mb-2"><a href="#" class="text-black text-lg hover:text-purple-200 opacity-80">Testimonial</a></li>
+                        <li class="mb-2"><a href="#" class="text-black text-lg hover:text-purple-200 opacity-80">Programs</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-black font-bold text-lg mb-4">More</h4>
+                    <ul>
+                        <li class="mb-2"><a href="#" class="text-black text-lg hover:text-purple-200 opacity-80">Press</a></li>
+                        <li class="mb-2"><a href="#" class="text-black text-lg hover:text-purple-200 opacity-80">Investors</a></li>
+                        <li class="mb-2"><a href="#" class="text-black text-lg hover:text-purple-200 opacity-80">Terms</a></li>
+                        <li class="mb-2"><a href="#" class="text-black text-lg hover:text-purple-200 opacity-80">Privacy</a></li>
+                        <li class="mb-2"><a href="#" class="text-black text-lg hover:text-purple-200 opacity-80">Help</a></li>
+                        <li class="mb-2"><a href="#" class="text-black text-lg hover:text-purple-200 opacity-80">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-purple-400 border-opacity-30 mt-8 pt-6 text-center">
+                <div class="flex justify-center space-x-4 mb-4">
+                    <a href="#" class="social-icon">
+                        <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.776-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.262c-1.225 0-1.624.755-1.624 1.54V12h2.773l-.443 2.89h-2.33V22c4.781-.75 8.438-4.887 8.438-9.878C22 6.477 17.523 2 12 2z"></path></svg>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 20.352l2.584-9.35C2.864 9.47 3.328 8 4.295 8h16.208c1.077 0 1.629 1.144.976 2.054L19.29 12l-.959 3.097c-.324 1.05-.88 2.016-1.642 2.775l-4.225 3.996c-.663.626-1.57.94-2.48.94-.91 0-1.817-.314-2.48-.94L.057 20.352zM12 2a10 10 0 100 20 10 10 0 000-20zm0 18a8 8 0 110-16 8 8 0 010 16z"></path></svg>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M22.46 6c-.77.34-1.6.57-2.46.66.88-.53 1.56-1.37 1.88-2.37-.83.49-1.75.85-2.73 1.05C18.3 3.63 17.18 3 15.93 3c-2.36 0-4.28 1.9-4.28 4.26 0 .33.03.65.08.95C7.5 9.17 4.5 7.5 2.45 4.75c-.37.64-.58 1.38-.58 2.19 0 1.49.75 2.81 1.91 3.59-.7-.02-1.37-.21-1.95-.5v.05c0 2.06 1.46 3.78 3.39 4.17-.36.1-.73.15-1.1.15-.27 0-.53-.02-.79-.08.54 1.68 2.1 2.91 3.96 2.94-1.45 1.14-3.28 1.82-5.27 1.82-.34 0-.68-.02-1.01-.06C3.9 20.29 6.03 21 8.35 21c9.93 0 15.36-8.22 15.36-15.36V6h.01z"></path></svg>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0H5C2.24 0 0 2.24 0 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5V5c0-2.76-2.24-5-5-5zM8 19H5V8h3v11zM6.5 6.25c-.96 0-1.75-.79-1.75-1.75s.79-1.75 1.75-1.75 1.75.79 1.75 1.75-.79 1.75-1.75 1.75zM19 19h-3v-5c0-1.25-.7-1.75-1.5-.75-.8.8-1.5.75-1.5 1.75v4.5H10V8h3v1.5c.95-1.22 2.25-1.5 3.25-1.5 2.1 0 3.75 1.75 3.75 4V19z"></path></svg>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.373 0 12c0 6.627 5.373 12 12 12 6.627 0 12-5.373 12-12C24 5.373 18.627 0 12 0zm6.382 17.58c.28.087.45.24.45.45s-.17.363-.45.45c-.28.087-.66-.02-.91-.143l-4.9-2.94-2.94-4.9c-.14-.23-.02-.6.14-.91.087-.28.24-.45.45-.45s.363.17.45.45c.087.28-.02.6-.14.91l2.94 4.9 4.9 2.94c.23.14.6.02.91-.14z"></path></svg>
+                    </a>
+                </div>
+                <p class="text-white opacity-70">&copy; Copyright 2023 askmedunivercity. All Rights Reserved</p>
+            </div>
+        </footer>
+
+    </div>
+</body>
+</html>
+
+</body>
+</html>
+
+</body>
+</html>
+
+</body>
+</html>
